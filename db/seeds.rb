@@ -6,7 +6,7 @@ require 'faker'
 #
 10.times do
   article = Article.new(
-    name: Faker::Book.title,
+    title: Faker::Book.title,
     content: Faker::TvShows::Community.quotes )
   article.save!
 end
